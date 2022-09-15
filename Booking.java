@@ -1,20 +1,19 @@
-import java.sql.SQLOutput;
 import java.util.*;
 public class Booking
 {
     public static void main(String args[])
     {
         Scanner sc = new Scanner (System.in);
-        int w;
-        char ch;
+        int w; // taking a variable to store the weight of the parcel
+        char ch; // taking a variable to store the choice of the user
         System.out.println("Enter the weight of the parcel in gram");
-        w=sc.nextInt();
+        w=sc.nextInt(); // taking the input of the weight from the user
         System.out.println("Enter the type of booking");
         System.out.println("Enter 'O' for ordinary booking and 'E' for express booking");
-        ch = sc.next().charAt(0);
+        ch = sc.next().charAt(0); // taking the input of choice from the user
         switch(ch)
         {
-            case 'O':
+            case 'O': // for Ordinary Booking
                 if (w<=100)
                 {
                     System.out.println("Rs. 80");
@@ -35,7 +34,7 @@ public class Booking
                     System.out.println("Rs. 250");
                     break;
                 }
-            case 'E':
+            case 'E': // for Express Booking
                 if (w<=100)
                 {
                     System.out.println("Rs. 100");
