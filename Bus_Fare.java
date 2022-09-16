@@ -6,7 +6,7 @@ public class Bus_Fare
         Scanner sc = new Scanner (System.in);
         int km, fare=0;
         System.out.println("Enter the distance travelled");
-        km = sc.nextInt();
+        km = sc.nextInt(); // tkaing the input of the distance covered
         if (km<=10)
         {
             System.out.println("Pay Rs. 80");
